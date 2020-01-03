@@ -183,7 +183,9 @@ def user_stats(df):
 
 def main():
     while True:
+        # execute function to get user-provided filtering criteria
         city, month, day = get_filters()
+        # execute function to load data into a data frame, based on filter criteria
         df = load_data(city, month, day)
 
         time_stats(df)
