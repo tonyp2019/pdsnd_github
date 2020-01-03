@@ -5,7 +5,7 @@
 Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Python script & CSV data to allow the user to interactively explore the bikeshare data for 3 US cities
 
 ### Files used
 Include the files used
