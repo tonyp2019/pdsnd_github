@@ -11,5 +11,7 @@ Python script & CSV data to allow the user to interactively explore the bikeshar
 Python script bikeshare_2.py and 3 CSV data files
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This repo is forked from https://github.com/udacity/pdsnd_github.
+Udacity provided the skeleton, helper Python script.
+Motivate provided the bikeshare data.
 
