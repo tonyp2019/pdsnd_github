@@ -189,7 +189,7 @@ def main():
 
         # get user input to ascertain if they would like to view raw data
         view_counter = 0
-        view_data = input('\nWould you like to view raw data? Enter yes or no.\n')
+        view_data = input('\nWould you like to view the raw data records? Enter yes or no.\n')
         while view_data.lower() == 'yes':
             # retrieve the next 5 records, and only show the columns from the raw data, ignoring the 4 new columns created by this program
             print(df.iloc[view_counter:view_counter+5,0:-4])
