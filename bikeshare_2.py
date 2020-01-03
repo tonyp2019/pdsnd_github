@@ -197,7 +197,7 @@ def main():
         while view_data.lower() == 'yes':
             # retrieve the next 5 records, and only show the columns from the raw data, ignoring the 4 new columns created by this program
             print(df.iloc[view_counter:view_counter+5,0:-4])
-			# increment the counter by 5, and get user input again
+            # increment the counter by 5, and get user input again
             view_counter += 5
             view_data = input('\nWould you like to view the next 5 data records? Enter yes or no.\n')
 
