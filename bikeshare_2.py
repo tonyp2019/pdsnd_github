@@ -86,7 +86,7 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
+    # start_time = time.time()
 
     # display the most common month
     popular_month = df['month'].mode()[0]
@@ -100,7 +100,7 @@ def time_stats(df):
     popular_hour = df['hour'].mode()[0]
     print('Most Popular Start Hour:', popular_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    # print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -108,7 +108,7 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
+    # start_time = time.time()
 
     # display most commonly used start station
     popular_start_station = df['Start Station'].mode()[0]
@@ -123,7 +123,7 @@ def station_stats(df):
     popular_station_combination = df['station_combination'].mode()[0]
     print('Most Popular Station Combination:', popular_station_combination)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    # print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -131,7 +131,7 @@ def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
-    start_time = time.time()
+    # start_time = time.time()
 
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
@@ -143,7 +143,7 @@ def trip_duration_stats(df):
     # print the seconds in a rounded format
     print('Mean Travel Time (in seconds):', round(mean_travel_time))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    # print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -151,7 +151,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
+    # start_time = time.time()
 
     # Display counts of user types
     user_types = df['User Type'].value_counts()
@@ -177,7 +177,7 @@ def user_stats(df):
     except Exception:
         print('\nSorry, no birth year data available.')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    # print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -195,7 +195,7 @@ def main():
 
         # get user input to ascertain if they would like to view raw data
         view_counter = 0
-        view_data = input('\nWould you like to view raw data? Enter yes or no.\n')
+        view_data = input('\nWould you like to view the raw data records? Enter yes or no.\n')
         while view_data.lower() == 'yes':
             # retrieve the next 5 records, and only show the columns from the raw data, ignoring the 4 new columns created by this program
             print(df.iloc[view_counter:view_counter+5,0:-4])
@@ -210,4 +210,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
